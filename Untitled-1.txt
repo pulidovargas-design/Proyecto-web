@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Reservas de Hotel</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Hotel Paraíso</h1>
+    <nav>
+      <ul>
+        <li><a href="#buscar">Buscar</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#confirmacion">Confirmación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Formulario de búsqueda -->
+    <section id="buscar">
+      <h2>Buscar Reservas</h2>
+      <form>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ej: Cartagena">
+
+        <label for="entrada">Fecha de entrada:</label>
+        <input type="date" id="entrada" name="entrada">
+
+        <label for="salida">Fecha de salida:</label>
+        <input type="date" id="salida" name="salida">
+
+        <label for="huespedes">Número de huéspedes:</label>
+        <select id="huespedes" name="huespedes">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4+</option>
+        </select>
+
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Listado de habitaciones con fotos pequeñas -->
+    <section id="habitaciones">
+      <h2>Habitaciones Disponibles</h2>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Habitación Sencilla" class="mini-foto">
+        <h3>Habitación Sencilla</h3>
+        <p>Cama individual, baño privado, aire acondicionado.</p>
+        <p><strong>$100/noche</strong></p>
+        <button>Reservar</button>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Habitación Doble" class="mini-foto">
+        <h3>Habitación Doble</h3>
+        <p>Dos camas individuales, vista al jardín.</p>
+        <p><strong>$150/noche</strong></p>
+        <button>Reservar</button>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1560448204-1b8a1c1f1f3b" alt="Habitación Familiar" class="mini-foto">
+        <h3>Habitación Familiar</h3>
+        <p>Capacidad para 4 personas, balcón privado.</p>
+        <p><strong>$250/noche</strong></p>
+        <button>Reservar</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer id="contacto">
+    <p>📞 Teléfono: +57 300 123 4567</p>
+    <p>✉️ Email: reservas@hotelparaiso.com</p>
+    <p>© 2026 Hotel Paraíso</p>
+  </footer>
+</body>
+</html>

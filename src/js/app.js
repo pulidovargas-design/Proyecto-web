@@ -1,0 +1,1 @@
+console.log("Proyecto iniciado con Git y GitHub");
